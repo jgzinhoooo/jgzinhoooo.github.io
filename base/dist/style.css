@@ -1,0 +1,105 @@
+/* Resetando margens e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7; /* Cor de fundo neutra */
+  color: #333; /* Cor do texto padrão */
+  padding: 0 20px;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Estilo do título principal */
+h1 {
+  font-size: 4em; /* Grande o suficiente para chamar atenção */
+  background: linear-gradient(45deg, #ff6b6b, #f0f0f0); /* Gradiente vermelho-rosado */
+  color: transparent; /* Tornar o texto transparente para o gradiente ser visível */
+  background-clip: text; /* Faz o gradiente se aplicar somente ao texto */
+  text-align: center;
+  margin-top: 50px;
+  text-transform: uppercase; /* Texto em maiúsculas */
+  letter-spacing: 5px; /* Espaçamento entre as letras */
+  font-weight: bold;
+}
+
+/* Estilo para o subtítulo */
+h2 {
+  font-size: 2em;
+  color: #3498db;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: normal;
+}
+
+/* Botão com efeito de hover */
+button {
+  background-color: #3498db;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 20px auto;
+  display: block; /* Centraliza o botão */
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+/* Estilo para links */
+a {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 1.1em;
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+/* Estilo para o parágrafo */
+p {
+  font-size: 1.2em;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Rodapé */
+footer {
+  font-size: 0.9em;
+  color: #7f8c8d;
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px 0;
+}
+
+/* Estilo para a responsividade */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em; /* Reduz o tamanho do título em telas menores */
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+}
